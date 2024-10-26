@@ -27,9 +27,11 @@ This is a React-based application for creating, combining, and evaluating rules.
  ***Start the frontend:***
  
  cd client
+ 
  npm start
 
  ***Start the Backend:***
 
  cd server
+ 
  node server.js
