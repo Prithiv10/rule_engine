@@ -1,0 +1,182 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(https://ilwllc.com/wp-content/uploads/2020/07/rules-engine-1080x628.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  /* display: flex; */
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+
+.container {
+  width: 100%;
+  max-width: 850px;
+  padding: 20px;
+  margin: 20px auto;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr;
+}
+
+h1 {
+  font-size: 2.8em;
+  color: black;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px #0a74a1;
+}
+
+/* Order-specific Styling */
+.section-create {
+  order: 1;
+}
+
+.section-combine {
+  order: 2;
+}
+
+.section-evaluate {
+  order: 3;
+}
+
+/* Section Box Styling */
+.section-box {
+  background-color: black;
+  border-radius: 8px;
+  box-shadow: 0 6px 10px rgba(233, 101, 101, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.section-box:hover {
+  box-shadow: #c82333  0px 0px 10px;
+  transform: translateY(-5px);
+}
+
+/* Title Styling */
+.title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Input Field Styling */
+.input-field {
+  width: 80%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 1rem ;
+  color: #495057;
+  transition: border-color 0.3s ease;
+}
+
+.input-field:focus {
+  border-color: #007bff;
+}
+
+/* Button Styling */
+.btn {
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button Colors */
+.btn-submit {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn-remove {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.btn-add {
+  background-color: #28a745;
+  color: #fff;
+}
+
+/* Hover Effects */
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn-submit:hover {
+  background-color: #0056b3;
+}
+
+.btn-remove:hover {
+  background-color: #c82333;
+}
+
+.btn-add:hover {
+  background-color: #218838;
+}
+
+/* Error Message Styling */
+.error-message {
+  font-size: 1rem;
+  color: #dc3545;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Result Display Styling */
+.result {
+  background-color: #e9ecef;
+  padding: 15px;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #343a40;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Label Styling */
+.label {
+  font-size: 1.4rem;
+  font: bold;
+  color: red;
+  display: block;
+  margin-bottom: 6px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 1.4rem;
+  }
+
+  .input-field {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+  }
+}
